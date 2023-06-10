@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Riwayat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of historyData">
+    <ion-card-header>
+      Submitted Information
+    </ion-card-header>
+    <ion-card-content>
+      <p>Name: {{ data.name }}</p>
+      <p>Address: {{ data.address }}</p>
+      <p>NIK: {{ data.nik }}</p>
+      <p>tempat tanggal lahir: tempat tangal lahir</p>
+      <p>golongan darah : golongan darahr</p>
+      <p>agama : agama</p>
+      <p>pekerjaan: pekerjaan</p>
+      <p>kewarganegaraan : kewarganegaraan</p>
+      <p>status Perkawinan : status Perkawinan</p>
+      <p>berlaku hingga :berlaku hingga</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
